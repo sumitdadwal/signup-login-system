@@ -1,0 +1,26 @@
+
+#:import utils kivy.utils
+#:include kv/homescreen.kv
+#:include kv/signupscreen.kv
+#:include kv/loginscreen.kv
+
+GridLayout:
+    cols: 1
+    ScreenManager:
+        id: screen_manager
+        HomeScreen:
+            name: "home_screen"
+            id: home_screen
+        SignUpScreen:
+            name: "signup_screen"
+            id: signup_screen
+        LogInScreen:
+            name: "login_screen"
+            id: login_screen
+            debug: True
+            remember_user: True
+            require_email_verification: True
+            web_api_key: "AIzaSyD-uqMjyygH_xidOz03kuuiTQG2NxNHq8M"
+            primary_color: utils.get_color_from_hex("#EE682A")
+            secondary_color: (.25, .25, .25, 1)
+           

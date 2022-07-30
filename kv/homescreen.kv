@@ -1,0 +1,66 @@
+#:import utils kivy.utils
+<HomeScreen>:
+    FloatLayout:
+        GridLayout:
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("#FFFFFF")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            pos_hint: {"top": 1, "left": 1}
+            size_hint: 1, 1
+        GridLayout:
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("#f7f1c6")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            pos_hint: {"right": 0.95, "top": 0.98}
+            size_hint: 0.9, 0.6
+        GridLayout:
+            rows: 1
+            pos_hint: {"right": 0.9, "top": 0.95}
+            size_hint: 0.8, 0.6
+            Image:
+                source: "Images/logonobackground.png"
+        Label:
+            pos_hint: {"top": 0.95, "left": 1}
+            size_hint: 1, .1
+            color: 0,0,0,1
+            font_size: 54
+            text: "OD1N Health"
+            bold: True
+        Label:
+            pos_hint: {"top": 0.38, "left": 1}
+            size_hint: 1, .1
+            color: 0,0,0,1
+            font_size: 24
+            bold: True
+            italic: True
+            text: "Take Control of Your Health Today!"
+        Button:
+            text:
+                "Log In"
+            on_release:
+                app.change_screen("login_screen")
+            font_size: 40
+            bold: True
+            background_normal: ''
+            background_color: utils.get_color_from_hex("F8D02A")
+            pos_hint: {"right": 0.93, "top": 0.28}
+            size_hint: 0.86, 0.1
+        Button:
+            text:
+                "Sign Up"
+            on_release:
+                app.change_screen("signup_screen")
+            color: 0,0,0,1
+            font_size: 40
+            bold: True
+            background_normal: ''
+            background_color:
+                utils.get_color_from_hex("#f7f1c6")
+            pos_hint: {"right": 0.93, "top": 0.15}
+            size_hint: 0.86, 0.1

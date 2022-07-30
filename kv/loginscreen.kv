@@ -1,0 +1,84 @@
+#:import utils kivy.utils
+<LogInScreen>:
+    FloatLayout:
+        GridLayout:
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("#FFFFFF")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            pos_hint: {"top": 1, "left": 1}
+            size_hint: 1, 1
+        GridLayout:
+            rows: 1
+            pos_hint: {"right": 0.65, "top": 0.95}
+            size_hint: 1, 0.095
+            Image:
+                source: "Images/logonobackground.png"
+        Label:
+            pos_hint: {"top": 0.95, "left": 1}
+            size_hint: 1, .1
+            color: 0,0,0,1
+            font_size: 54
+            text: "OD1N Health"
+            bold: True
+        Label:
+            pos_hint: {"right": 0.75, "top": 0.80}
+            size_hint: 1, .1
+            color: 0,0,0,1
+            font_size: 68
+            text: "Log In"
+            bold: True
+        GridLayout:
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("#f7f1c6")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            pos_hint: {"right": 0.95, "top": 0.70}
+            size_hint: 0.9, 0.33
+        Button:
+            text:
+                "Forgot Password?"
+            on_release:
+                app.change_screen("signup_screen")
+            font_size: 24
+            bold: True
+            italic: True
+            color: 0,0,0,1
+            background_normal: ''
+            background_color: utils.get_color_from_hex("FFFFFF")
+            pos_hint: {"top": 0.37, "right": 0.55}
+            size_hint: 0.1, .1
+        Button:
+            text:
+                "Sign In"
+            font_size: 40
+            bold: True
+            background_normal: ''
+            background_color: utils.get_color_from_hex("F8D02A")
+            pos_hint: {"right": 0.93, "top": 0.26}
+            size_hint: 0.86, 0.1
+        Label:
+            pos_hint: {"top": 0.14, "left": 0.85}
+            size_hint: 0.9, .1
+            color: 0,0,0,1
+            font_size: 24
+            bold: True
+            italic: True
+            text: "Don't have an account?"
+        Button:
+            text:
+                "Sign Up"
+            on_release:
+                app.change_screen("signup_screen")
+            font_size: 24
+            bold: True
+            italic: True
+            color: utils.get_color_from_hex("F8D02A")
+            background_normal: ''
+            background_color: utils.get_color_from_hex("FFFFFF")
+            pos_hint: {"top": 0.14, "right": 0.80}
+            size_hint: 0.1, .1
