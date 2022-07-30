@@ -21,4 +21,9 @@ Once the program is up and running:
 
 Functioning:
 - Once the user is created, user will be stored in SQLlite database under user table.
-- Password will be hashed for security purposes.[screen-capture (15).webm](https://user-images.githubusercontent.com/84678969/181996840-543e0da4-c40c-4136-987e-6942888a75a7.webm)
+- Password will be hashed for security purposes.
+
+
+
+
+[screen-capture (15).webm](https://user-images.githubusercontent.com/84678969/181996840-543e0da4-c40c-4136-987e-6942888a75a7.webm)
