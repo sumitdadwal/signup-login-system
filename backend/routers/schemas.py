@@ -1,11 +1,11 @@
 from datetime import datetime
 from sqlite3 import Timestamp
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 from typing import List
 
 
 class UserBase(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 class UserDisplay(BaseModel):

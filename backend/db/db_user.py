@@ -1,4 +1,3 @@
-import email
 from fastapi import HTTPException, status
 from routers.schemas import UserBase
 from sqlalchemy.orm.session import Session
@@ -10,6 +9,8 @@ def new_user(db: Session, request: UserBase):
         email = request.email,
         password = Hash.bcrypt(request.password)
     )
+    if new_user.email == User.email:
+        print('NO')
 
     db.add(new_user)
     db.commit()
