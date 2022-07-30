@@ -24,6 +24,16 @@ Functioning:
 - Password will be hashed for security purposes.
 
 
-
+DEMO:
 
 [screen-capture (15).webm](https://user-images.githubusercontent.com/84678969/181996840-543e0da4-c40c-4136-987e-6942888a75a7.webm)
+
+
+
+
+
+Database:
+
+
+![project-screenshot](https://user-images.githubusercontent.com/84678969/181996893-3cdb9ee7-3836-422c-a4bd-bc27a0f4ce74.jpg)
+
