@@ -10,7 +10,7 @@ Use the following commands to run the code:
 
 - uvicorn main:app --reload
 
-Once the program is u and running:
+Once the program is up and running:
 
 - Go to http://localhost:8000/docs through your web browser
 
